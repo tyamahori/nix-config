@@ -25,6 +25,12 @@ in {
       curl
       bun
       cmake
+      mas
+      php84
+      php84Packages.composer
+      php84Extensions.xdebug
+      direnv
+      go
     ];
   };
 

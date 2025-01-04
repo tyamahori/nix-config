@@ -35,6 +35,12 @@
         nix run nixpkgs#home-manager -- switch --flake .#myHomeConfig
         arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin
         echo "Update complete!"
+        echo "GC ...."
+        nix-store --gc
+        echo "GC complete!"
+        echo "Sourcing ...."
+        source $HOME/.zshrc
+        echo "Sourcing complete!"
       '');
     };
 
