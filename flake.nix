@@ -38,9 +38,9 @@
         echo "GC ...."
         nix-store --gc
         echo "GC complete!"
-        echo "Sourcing ...."
-        source $HOME/.zshrc
-        echo "Sourcing complete!"
+        go install github.com/k1LoW/runn/cmd/runn@latest
+        go install github.com/go-task/task/v3/cmd/task@latest
+        source ~/.zshrc
       '');
     };
 
