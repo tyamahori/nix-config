@@ -69,10 +69,6 @@
         greedy = true;
       }
       {
-        name = "mozc@pre";
-        greedy = true;
-      }
-      {
         name = "alt-tab";
         greedy = true;
       }
@@ -130,10 +126,6 @@
       }
       {
         name = "intellij-idea";
-        greedy = true;
-      }
-      {
-        name = "jetbrains-toolbox";
         greedy = true;
       }
       {
@@ -232,6 +224,18 @@
         name = "alacritty";
         greedy = true;
       }
+      {
+        name = "tinkerwell";
+        greedy = true;
+      }
+      {
+        name = "gather";
+        greedy = true;
+      }
+#      {
+#        name = "astah-professional";
+#        greedy = true;
+#      }
     ];
     masApps = {
       LINE = 539883307;
