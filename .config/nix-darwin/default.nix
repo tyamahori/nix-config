@@ -232,6 +232,10 @@
         name = "gather";
         greedy = true;
       }
+      {
+        name = "logseq";
+        greedy = true;
+      }
 #      {
 #        name = "astah-professional";
 #        greedy = true;
