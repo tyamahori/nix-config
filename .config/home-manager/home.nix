@@ -27,6 +27,7 @@ in {
       cmake
       mas
       direnv
+      httpie
     ];
   };
 

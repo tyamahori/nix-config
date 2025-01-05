@@ -8,8 +8,8 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchFromGitHub {
     owner = "microsoft";
     repo = "pict";
-    rev = "v3.7.4";
-    hash = "sha256-APL1DHwJAOqk1dmWtGL7cPlMfnSfsiIpap3CyBu7fbg=";
+    rev = "main";
+    hash = "sha256-sG/Kv5JL6h0YYXmr7F5dVtjgAPzEkQCtqS+ZpcUnOxw=";
   };
 
   # ビルドに必要な依;存パッケージ
