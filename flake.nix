@@ -36,11 +36,7 @@
         arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin
         echo "Update complete!"
         echo "GC ...."
-        nix-store --gc
         echo "GC complete!"
-        go install github.com/k1LoW/runn/cmd/runn@latest
-        go install github.com/go-task/task/v3/cmd/task@latest
-        source ~/.zshrc
       '');
     };
 
