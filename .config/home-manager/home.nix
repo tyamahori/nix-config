@@ -28,6 +28,8 @@ in {
       mas
       direnv
       httpie
+      nodejs_23
+      deno
     ];
   };
 
