@@ -236,6 +236,10 @@
         name = "logseq";
         greedy = true;
       }
+      {
+        name = "ghostty";
+        greedy = true;
+      }
 #      {
 #        name = "astah-professional";
 #        greedy = true;
