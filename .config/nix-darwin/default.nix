@@ -240,10 +240,14 @@
         name = "ghostty";
         greedy = true;
       }
-#      {
-#        name = "astah-professional";
-#        greedy = true;
-#      }
+     {
+       name = "astah-professional";
+       greedy = true;
+     }
+          {
+       name = "libreoffice";
+       greedy = true;
+     }
     ];
     masApps = {
       LINE = 539883307;
