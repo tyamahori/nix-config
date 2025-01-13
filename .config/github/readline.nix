@@ -1,12 +1,13 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation {
-  pname = "readline";
-  version = "8.2";
 
-  src = pkgs.fetchurl {
-    url = "http://ftp.gnu.org/pub/gnu/readline/readline-8.2.tar.gz";
-    hash = "sha256-P+txcfFqhO6CyhijbXub4QmlLAT0kqBTMx19EJUAfDU=";
+  pname = "readline";
+  version = "master";
+
+  src = fetchGit {
+    url = "https://git.savannah.gnu.org/git/readline";
+    ref = "master";
   };
 
   # ビルドに必要な依;存パッケージ
