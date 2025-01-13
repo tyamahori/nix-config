@@ -30,7 +30,8 @@
         echo "Updating flake..."
         nix flake update
         echo "Building apps..."
-        nix-build ./.config/github/pict.nix && nix profile install ./result
+        nix-build ./.config/github/pict.nix -o result/pict && nix profile install ./result/pict
+        nix-build ./.config/github/readline.nix -o result/readline && nix profile install ./result/readline
         echo "Updating home-manager..."
         nix run nixpkgs#home-manager -- switch --flake .#myHomeConfig
         arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin

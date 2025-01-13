@@ -28,6 +28,7 @@ in {
       mas
       direnv
       httpie
+      wget
     ];
   };
 
