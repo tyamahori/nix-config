@@ -29,6 +29,7 @@ in {
       direnv
       httpie
       wget
+      go-task
     ];
   };
 
