@@ -2,7 +2,7 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "pict";
-  version = "3.7.4";
+  version = "main";
 
   # GitHubからソースを取得
   src = pkgs.fetchFromGitHub {
