@@ -23,6 +23,6 @@ pkgs.stdenv.mkDerivation {
   # インストールフェーズ
   installPhase = ''
     mkdir -p $out/bin
-    cp pict $out/bin/
+    install -m 0755 pict $out/bin
   '';
 }

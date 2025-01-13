@@ -10,18 +10,22 @@ pkgs.stdenv.mkDerivation {
   };
 
   # ビルドに必要な依;存パッケージ
-  buildInputs = [ pkgs.gnumake ];
+  buildInputs = [
+    pkgs.gnumake
+    pkgs.termcap
+    pkgs.ncurses
+  ];
 
   # ビルドコマンド
   buildPhase = ''
     ls -la
-    ./configure
+    ./configure --prefix=`pwd`
     ${pkgs.gnumake}/bin/make
   '';
 
   # インストールフェーズ
   installPhase = ''
-    mkdir -p $out/bin
-    cp readline $out/bin/
+    mkdir -p $out
+    ${pkgs.gnumake}/bin/make install DESTDIR=$out
   '';
 }
