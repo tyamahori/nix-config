@@ -31,7 +31,6 @@
         nix flake update
         echo "Building apps..."
         nix-build ./.config/github/pict.nix -o result/pict && nix profile install ./result/pict
-        nix-build ./.config/github/readline.nix -o result/readline && nix profile install ./result/readline
         nix-build ./.config/github/runn.nix -o result/runn && nix profile install ./result/runn
         echo "Updating home-manager..."
         nix run nixpkgs#home-manager -- switch --flake .#myHomeConfig

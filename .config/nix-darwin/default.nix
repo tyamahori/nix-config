@@ -244,8 +244,12 @@
        name = "astah-professional";
        greedy = true;
      }
-          {
+     {
        name = "libreoffice";
+       greedy = true;
+     }
+     {
+       name = "chatgpt";
        greedy = true;
      }
     ];
