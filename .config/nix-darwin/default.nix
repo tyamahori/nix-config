@@ -252,6 +252,10 @@
        name = "chatgpt";
        greedy = true;
      }
+     {
+      name = "chatwork";
+      greedy = true;
+     }
     ];
     masApps = {
       LINE = 539883307;
