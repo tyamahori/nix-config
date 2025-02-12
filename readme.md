@@ -9,3 +9,5 @@
 - go install github.com/go-task/task/v3/cmd/task@latest
 
 - sudo nix-store --repair --verify --check-contents
+
+- nix-collect-garbage -d

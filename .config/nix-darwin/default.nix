@@ -8,7 +8,6 @@
       max-jobs = 8;
     };
   };
-  services.nix-daemon.enable = true;
 
   # システムの設定（nix-darwinが効いているかのテスト）
   system = {
