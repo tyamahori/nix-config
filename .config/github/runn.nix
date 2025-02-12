@@ -9,7 +9,7 @@ pkgs.stdenv.mkDerivation {
     owner = "k1LoW";
     repo = "runn";
     rev = "main";
-    hash = "sha256-mB+7QB+bss9OW/kHUB4UMe/GVpwsD2/jL7/EirKQdnE=";
+    hash = "sha256-sjs7oIYPl0EX1JYvCOE9a9e2SfWTIBMAM9ZEjSSsI8o=";
   };
 
   # ビルドに必要な依;存パッケージ
