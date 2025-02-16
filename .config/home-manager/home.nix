@@ -23,7 +23,6 @@ in {
     packages = with pkgs; [
       git
       curl
-      bun
       cmake
       mas
       direnv
