@@ -21,14 +21,6 @@ in {
     stateVersion = "24.05";
 
     packages = with pkgs; [
-      git
-      curl
-      cmake
-      mas
-      direnv
-      httpie
-      wget
-      go-task
     ];
   };
 
