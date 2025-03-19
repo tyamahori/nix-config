@@ -13,3 +13,5 @@
 - sudo nix-store --repair --verify --check-contents
 
 - nix-collect-garbage -d
+
+- devbox global add php go direnv bun git nodejs mas httpie cmake curl
