@@ -1,5 +1,7 @@
 - nix run .#update
 
+- nix flake update && nix profile upgrade packages
+
 - nix-store --gc
 
 - source ~/.zshrc

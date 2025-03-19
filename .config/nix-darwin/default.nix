@@ -255,6 +255,18 @@
       name = "chatwork";
       greedy = true;
      }
+     {
+       name = "camo-studio";
+       greedy = true;
+     }
+     {
+      name = "jetbrains-toolbox";
+      greedy = true;
+     }
+     {
+      name = "obs";
+      greedy = true;
+     }
     ];
     masApps = {
       LINE = 539883307;
