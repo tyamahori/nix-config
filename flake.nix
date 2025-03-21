@@ -38,6 +38,7 @@
         arch -arm64 brew upgrade
         arch -arm64 brew upgrade --cask --greedy
         arch -arm64 brew cleanup
+        mas upgrade
         echo "Update complete!"
       '');
     };

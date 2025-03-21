@@ -22,6 +22,7 @@ in {
 
     packages = with pkgs; [
       devbox
+      mas
     ];
   };
 
