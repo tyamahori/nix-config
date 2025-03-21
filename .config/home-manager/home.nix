@@ -28,6 +28,8 @@ in {
       httpie
       cmake
       go-task
+      vim
+      bat
     ];
   };
 
