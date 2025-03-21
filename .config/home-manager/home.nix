@@ -23,6 +23,11 @@ in {
     packages = with pkgs; [
       devbox
       mas
+      curl
+      git
+      httpie
+      cmake
+      go-task
     ];
   };
 
