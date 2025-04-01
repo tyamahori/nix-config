@@ -1,0 +1,10 @@
+version: '3'
+tasks:
+  cleanDocker:
+    cmds:
+      - docker rmi -f `docker images -q`
+      - docker rm -f `docker ps -aq` | true
+      - docker image prune -af | true
+      - docker builder prune -af | true
+      - docker volume prune -af | true
+      - docker network prune -f | true
