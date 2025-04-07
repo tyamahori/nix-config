@@ -271,6 +271,10 @@
       name = "aquaskk";
       greedy = true;
      }
+     {
+      name = "obsidian";
+      greedy = true;
+     }
     ];
     masApps = {
       LINE = 539883307;
