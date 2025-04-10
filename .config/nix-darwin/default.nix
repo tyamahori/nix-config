@@ -180,10 +180,6 @@
         greedy = true;
       }
       {
-        name = "skype";
-        greedy = true;
-      }
-      {
         name = "soundsource";
         greedy = true;
       }
