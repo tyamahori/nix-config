@@ -2,10 +2,11 @@ version: '3'
 tasks:
   cleanDocker:
     cmds:
-      - docker rmi -f `docker images -q` | true
       - docker container stop $(docker container ls -aq) | true
       - docker rm -f `docker ps -aq` | true
+      - docker rmi -f `docker images -q` | true
       - docker image prune -af | true
       - docker builder prune -af | true
       - docker volume prune -af | true
       - docker network prune -f | true
+      - docker system prune -f
