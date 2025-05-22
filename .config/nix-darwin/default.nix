@@ -12,6 +12,8 @@
   # システムの設定（nix-darwinが効いているかのテスト）
   system = {
     stateVersion = 5; # 必要そう。。。
+    primaryUser = "tyamahori";
+
     defaults = {
       NSGlobalDomain.AppleShowAllExtensions = true;
       finder = {
