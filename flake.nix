@@ -34,7 +34,7 @@
 #        nix-build ./.config/github/runn.nix -o result/runn && nix profile install ./result/runn
         echo "Updating home-manager..."
         nix run nixpkgs#home-manager -- switch --flake .#myHomeConfig
-        arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin
+        sudo arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin
         arch -arm64 brew upgrade
         arch -arm64 brew upgrade --cask --greedy
         arch -arm64 brew cleanup
