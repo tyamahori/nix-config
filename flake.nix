@@ -35,6 +35,7 @@
         echo "Updating home-manager..."
         nix run nixpkgs#home-manager -- switch --flake .#myHomeConfig
         sudo arch -arm64 nix run nix-darwin -- switch --flake .#tyamahori-darwin
+        devbox global update
         arch -arm64 brew upgrade
         arch -arm64 brew upgrade --cask --greedy
         arch -arm64 brew cleanup
